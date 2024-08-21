@@ -1,6 +1,6 @@
 # AW31N_SDK_docker (WIP)
 
-docker of AW31N_SDK
+[![Publish to Docker](https://github.com/VolWaves/AW31N_SDK_docker/actions/workflows/publish.yml/badge.svg)](https://github.com/VolWaves/AW31N_SDK_docker/actions/workflows/publish.yml)
 
 ## Build docker image
 
