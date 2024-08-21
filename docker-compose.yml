@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  aw31n_sdk:
+    build: .
+    volumes:
+      - ./project:/SDK/apps/demo/project
+    environment:
+      - TZ=Asia/Shanghai
+    restart: never
