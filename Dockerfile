@@ -1,6 +1,9 @@
 
 FROM ubuntu:24.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
+
 RUN apt update && apt install -y make wget unzip xz-utils python3 \
 && apt clean && rm -rf /var/lib/apt/lists/* \
 && wget -q https://github.com/VolWaves/AW31N_BLE_SDK_linux/archive/refs/heads/main.zip --output-document /SDK.zip \
