@@ -1,16 +1,13 @@
-# AW31N_SDK_docker (WIP)
+# AW31N SDK docker
 
 [![Publish to Docker](https://github.com/VolWaves/AW31N_SDK_docker/actions/workflows/publish.yml/badge.svg)](https://github.com/VolWaves/AW31N_SDK_docker/actions/workflows/publish.yml)
+
+## Usage
+Here's an example demonstrating how to use this docker to compile the actual project.  
+https://github.com/VolWaves/AW31N_docker_example
 
 ## Build docker image
 
 ```bash
 docker build -t aw31n-sdk .
-```
-
-## Compile
-
-```bash
-docker pull aw31n-sdk:latest
-docker run --rm -v $(pwd)/project_name:/SDK/apps/docker/project_name aw31n-sdk:latest /bin/bash -c "cd project_name/board/bd47 && make"
 ```
